@@ -1,0 +1,3 @@
+FROM eclipse-temurin:17-alpine
+COPY API-GATEWAY/target/API-GATEWAY-0.0.1-SNAPSHOT.jar API-GATEWAY-SERVICE.jar
+ENTRYPOINT ["java", "-jar", "/API-GATEWAY-SERVICE.jar"]
